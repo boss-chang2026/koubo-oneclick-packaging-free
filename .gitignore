@@ -8,6 +8,7 @@ out/
 *.m4a
 *.jpg
 *.png
+!docs/assets/*.jpg
 words.json
 styles/*/fonts/*.otf
 styles/*/fonts/*.ttf
