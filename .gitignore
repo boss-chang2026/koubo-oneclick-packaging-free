@@ -1,0 +1,16 @@
+node_modules/
+.venv/
+.cache/
+out/
+*.mp4
+*.mov
+*.wav
+*.m4a
+*.jpg
+*.png
+words.json
+styles/*/fonts/*.otf
+styles/*/fonts/*.ttf
+examples/demo/aroll.*
+examples/demo/screenshot.*
+.DS_Store

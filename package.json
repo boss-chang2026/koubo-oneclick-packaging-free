@@ -1,0 +1,19 @@
+{
+  "name": "koubo-oneclick-packaging-free",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "口播一键包装 免费版：口播视频 + SRT 字幕 → AI 写分镜计划 → 网页逐帧渲染 → 带包装的成片。",
+  "license": "MIT",
+  "bin": { "kb": "bin/kb.mjs" },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "browser": "playwright-core install chromium-headless-shell",
+    "font": "node scripts/get-font.mjs",
+    "demo": "node scripts/make-demo.mjs && node bin/kb.mjs render examples/demo/plan.json",
+    "test": "node --test tests/"
+  },
+  "dependencies": {
+    "playwright-core": "1.63.0"
+  }
+}

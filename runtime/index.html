@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>口播一键包装 免费版</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #000; overflow: hidden; }
+  #stage { position: relative; overflow: hidden; }
+  #stage > * { position: absolute; }
+  .bg, .layer { inset: 0; }
+  .host { overflow: hidden; }
+  .host-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .caption { left: 0; right: 0; display: flex; justify-content: center; pointer-events: none; }
+  .caption-text { white-space: nowrap; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+  // 页面出错立即上报，渲染器不必空等
+  addEventListener('error', e => { window.__ERR = (e.message || '脚本加载失败') + (e.filename ? ' @ ' + e.filename : ''); }, true);
+  addEventListener('unhandledrejection', e => { window.__ERR = String(e.reason?.message || e.reason); });
+</script>
+<script type="module" src="/runtime/engine.js" onerror="window.__ERR='引擎脚本加载失败'"></script>
+</body>
+</html>

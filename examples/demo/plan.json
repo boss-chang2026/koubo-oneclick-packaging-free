@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "style": "basic",
+  "aroll": "aroll.mp4",
+  "srt": "demo.srt",
+  "cacheDir": ".cache",
+  "segments": [
+    { "id": "open", "cues": [1, 1], "archetype": "F0", "slots": { "tags": ["好方法"] } },
+    { "id": "question", "cues": [2, 2], "archetype": "A1", "slots": { "key": "什么问题？" } },
+    { "id": "ch1", "cues": [3, 3], "archetype": "G2", "header": false, "slots": { "index": "01", "label": "第一", "headline": "资料不再散落" } },
+    { "id": "types", "cues": [4, 4], "archetype": "E1", "header": false, "slots": { "items": ["文档", "表格", "图片", "视频"], "icons": ["文档", "数据", "灯泡", "视频"] } },
+    { "id": "flow", "cues": [5, 5], "archetype": "B3", "header": "三步走", "slots": { "nodes": ["先收集", "再整理", "最后调用"] } },
+    { "id": "repo", "cues": [6, 6], "archetype": "D1", "slots": { "image": "screenshot.png", "focus": [0.05, 0.62, 0.4, 0.3], "focusSay": "七万多颗星" } },
+    { "id": "compare", "cues": [7, 7], "archetype": "B1", "header": false, "slots": { "leftLabel": "原来", "leftSub": "要半小时", "rightLabel": "现在", "rightSub": "三分钟" } },
+    { "id": "number", "cues": [8, 8], "archetype": "C1", "header": false, "say": ["百分之九十"], "slots": { "nums": ["90%"], "notes": ["省下的时间"] } }
+  ]
+}

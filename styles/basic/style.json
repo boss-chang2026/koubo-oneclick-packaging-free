@@ -1,0 +1,35 @@
+{
+ "id": "basic",
+ "name": "基础深色",
+ "canvas": { "w": 1920, "h": 1080 },
+ "colors": { "bg": "#10100e", "gold": "#deb43f", "paper": "#ecebe4", "ink": "#18201f" },
+ "type": { "caption": 62 },
+ "slots": {
+  "hostRect": [164, 220, 430, 650],
+  "hostCircle": [164, 705, 220, 220],
+  "panel": [700, 100, 1110, 740],
+  "evidence": [300, 80, 1510, 680],
+  "full": [120, 120, 1680, 760],
+  "caption": [130, 966, 1660, 84]
+ },
+ "host": { "radius": 18, "morph": 0.35, "objectPosition": "50% 32%" },
+ "motion": {
+  "sceneIn": 0.22, "sceneInDx": 80, "sceneOutDx": -35, "exit": 0.1,
+  "shake": { "dur": 0.28, "x": 12, "y": 4, "rot": 1.2 },
+  "bounce": [[0, 0.65], [0.15, 1.17], [0.26, 0.94], [0.36, 1.06], [0.48, 1]]
+ },
+ "fonts": {
+  "KB Heavy": { "file": "/styles/basic/fonts/heavy.otf", "weight": 900, "optional": true }
+ },
+ "safeRight": 1627,
+ "textRight": 1630,
+ "captionMaxChars": 14,
+ "headerFixed": 64,
+ "stages": {
+  "card": {
+   "circle": { "stage": [200, 90, 1520, 850], "host": [40, 640, 300, 300] },
+   "rect": { "stage": [740, 150, 1000, 700], "host": [180, 150, 520, 700] },
+   "pad": 38, "header": 112, "gap": 44
+  }
+ }
+}
